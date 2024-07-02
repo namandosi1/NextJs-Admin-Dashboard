@@ -1,4 +1,3 @@
-import Image from "next/image";
 import MenuLink from "./menuLink/menuLink";
 import styles from "./sidebar.module.css";
 import {
@@ -11,7 +10,7 @@ import {
   MdPeople,
   MdOutlineSettings,
   MdHelpCenter,
-  MdLogout,
+  
 } from "react-icons/md";
 
 
@@ -105,17 +104,7 @@ const Sidebar = async () => {
           </li>
         ))}
       </ul>
-      <form
-        action={async () => {
-          "use server";
-          await signOut();
-        }}
-      >
-        {/* <button className={styles.logout}>
-          <MdLogout />
-          Logout
-        </button> */}
-      </form>
+      
     </div>
   );
 };
